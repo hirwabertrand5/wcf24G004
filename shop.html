@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tejaye & Bertrand Shop</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span id="cartItemCount">0</span></a>
+            <script>
+                // Initialize an empty array to store cart items
+                var cartItems = [];
+            
+                // Function to update the cart item count
+                function updateCartItemCount() {
+                    // Get the cart item count span element
+                    var cartItemCountSpan = document.getElementById("cartItemCount");
+                    // Update the inner text with the length of the cartItems array
+                    cartItemCountSpan.innerText = cartItems.length;
+                }
+            
+                // Function to add product to cart
+                function addToCart(productName, price) {
+                    // Create a new object representing the product
+                    var product = {
+                        name: productName,
+                        price: price
+                        // Add more properties as needed
+                    };
+            
+                    // Add the product to the cart array
+                    cartItems.push(product);
+            
+                    // Update the cart item count
+                    updateCartItemCount();
+            
+                    // Display an alert message indicating the product has been added to the cart
+                    alert('Product added to cart: ' + productName);
+                }
+            
+                // Example function to retrieve Hoodie product description
+                function getHoodieDescription() {
+                    return "This stylish hoodie is perfect for casual wear. Made from high-quality materials, it offers both comfort and durability. With a variety of colors available, you're sure to find the perfect hoodie to match your style.";
+                }
+            
+                // Function to display Hoodie product description modal
+                function showHoodieDescription() {
+                    var hoodieDescription = getHoodieDescription();
+                    document.getElementById("hoodieDescriptionContent").innerText = hoodieDescription;
+                    $('#hoodieDescriptionModal').modal('show');
+                }
+            </script>
+
+            <div class="price">&#8377;0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Best immersive Fashion E-commerce fashion Platform to Elevate Sales and Brand</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            
+                            <div class="header__top__hover">
+                                <span>Rupees</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">About us</a>
+                                
+                            </li>
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                        <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                        <div class="price">&#8377;0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    
+  <!-- Product Section Begin -->
+  <section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3">
+            
+                <div class="shop__sidebar">
+                    <div class="shop__sidebar__search">
+                        <form action="#">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit"><span class="icon_search"></span></button>
+                        </form>
+                    </div>
+                    <div class="shop__sidebar__accordion">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="shop__sidebar__categories">
+                                            <ul class="nice-scroll">
+                                                <li><a href="#">Men (4)</a></li>
+                                                <li><a href="#">Women (12)</a></li>
+                                                <li><a href="#">Bags (1)</a></li>
+                                                <li><a href="#">Clothes (2)</a></li>
+                                                <li><a href="#">Accessories (4)</a></li>
+                                                <li><a href="#">Foot wear(4)</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseTwo">Branding</a>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="shop__sidebar__brand">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Addidas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                    <span class="brand-feedback-icon" onclick="showFeedbackModal('Addidas')" style="margin-left: 10px; cursor: pointer;">...</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Jordan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                    <span class="brand-feedback-icon" onclick="showFeedbackModal('Jordan')" style="margin-left: 10px; cursor: pointer;">...</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mc queen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                    <span class="brand-feedback-icon" onclick="showFeedbackModal('Alexander Mc queen')" style="margin-left: 10px; cursor: pointer;">...</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Channel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                    <span class="brand-feedback-icon" onclick="showFeedbackModal('Channel')" style="margin-left: 10px; cursor: pointer;">...</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Louis Vuitton</a>
+                                                    <span class="brand-feedback-icon" onclick="showFeedbackModal('Louis Vuitton')" style="margin-left: 10px; cursor: pointer;">...</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        <!-- Modal for brand feedback -->
+                                        <div class="modal fade" id="brandFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="brandFeedbackModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="brandFeedbackModalLabel">Brand Feedback</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Form for giving feedback -->
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="feedbackTextarea">Your Feedback:</label>
+                                                                <textarea class="form-control" id="feedbackTextarea" rows="3"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="userImageInput">Upload Image:</label>
+                                                                <input type="file" class="form-control-file" id="userImageInput">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <script>
+                                            function showFeedbackModal(brandName) {
+                                                // Set the brand name in the modal title
+                                                document.getElementById("brandFeedbackModalLabel").innerText = "Feedback for " + brandName;
+                                                // Show the modal
+                                                $('#brandFeedbackModal').modal('show');
+                                            }
+                                        </script>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+                                </div>
+                                <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="shop__sidebar__price">
+                                            <ul>
+                                                <li><a href="#">&#8377;0.00 - &#8377;50.00</a></li>
+                                                <li><a href="#">&#8377;50.00 - &#8377;100.00</a></li>
+                                                <li><a href="#">&#8377;100.00 - &#8377;150.00</a></li>
+                                                <li><a href="#">&#8377;150.00 - &#8377;200.00</a></li>
+                                                <li><a href="#">&#8377;200.00 - &#8377;250.00</a></li>
+                                                <li><a href="#">250.00+</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+                                </div>
+                                <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="shop__sidebar__size">
+                                            <label for="xs">xs
+                                                <input type="radio" id="xs">
+                                            </label>
+                                            <label for="sm">s
+                                                <input type="radio" id="sm">
+                                            </label>
+                                            <label for="md">m
+                                                <input type="radio" id="md">
+                                            </label>
+                                            <label for="xl">xl
+                                                <input type="radio" id="xl">
+                                            </label>
+                                            <label for="2xl">2xl
+                                                <input type="radio" id="2xl">
+                                            </label>
+                                            <label for="xxl">xxl
+                                                <input type="radio" id="xxl">
+                                            </label>
+                                            <label for="3xl">3xl
+                                                <input type="radio" id="3xl">
+                                            </label>
+                                            <label for="4xl">4xl
+                                                <input type="radio" id="4xl">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
+                                </div>
+                                <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="shop__sidebar__color">
+                                            <label class="c-1" for="sp-1">
+                                                <input type="radio" id="sp-1">
+                                            </label>
+                                            <label class="c-2" for="sp-2">
+                                                <input type="radio" id="sp-2">
+                                            </label>
+                                            <label class="c-3" for="sp-3">
+                                                <input type="radio" id="sp-3">
+                                            </label>
+                                            <label class="c-4" for="sp-4">
+                                                <input type="radio" id="sp-4">
+                                            </label>
+                                            <label class="c-5" for="sp-5">
+                                                <input type="radio" id="sp-5">
+                                            </label>
+                                            <label class="c-6" for="sp-6">
+                                                <input type="radio" id="sp-6">
+                                            </label>
+                                            <label class="c-7" for="sp-7">
+                                                <input type="radio" id="sp-7">
+                                            </label>
+                                            <label class="c-8" for="sp-8">
+                                                <input type="radio" id="sp-8">
+                                            </label>
+                                            <label class="c-9" for="sp-9">
+                                                <input type="radio" id="sp-9">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+  <!-- End of sidebar -->
+            <div class="col-lg-10 col-md-10">
+                <ul class="filter__controls">
+                    <li class="active" data-filter="*"  >All Products</li>
+                    <li data-filter=".new-arrivals">Fashion</li>
+                    <li data-filter=".hot-sales">Foot wear</li>
+                    <li data-filter=".accessories">Accessories</li>
+                </ul>
+           
+        
+        <div class="row product__filter">
+          <!-- Modal popup HTML structure for T-shirt product description -->
+<div class="modal fade" id="tshirtDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="tshirtDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tshirtDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="tshirtDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- T-shirt product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+            <span class="label">New</span>
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showTshirtDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>T-shirt</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;20.24</h5>
+            <div class="product__color__select">
+                <label for="pc-1">
+                    <input type="radio" id="pc-1">
+                </label>
+                <label class="active black" for="pc-2">
+                    <input type="radio" id="pc-2">
+                </label>
+                <label class="grey" for="pc-3">
+                    <input type="radio" id="pc-3">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showTshirtDescription() {
+        // Replace the content of the modal with the respective product description
+        var tshirtDescription = getTshirtDescription();
+        document.getElementById("tshirtDescriptionContent").innerHTML = tshirtDescription;
+        // Show the modal popup
+        $('#tshirtDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve T-shirt product description
+    function getTshirtDescription() {
+        return "This T-shirt from Brand Name is made from high-quality cotton material, providing exceptional comfort and breathability. It features a classic design with a crew neckline and short sleeves. Available in various sizes and colors, this T-shirt is perfect for casual wear or layering with other garments. Add it to your wardrobe today and elevate your style with this versatile essential.";
+    }
+</script>
+<!-- first product end -->
+            <!-- Modal popup HTML structure for Adidas product description -->
+<div class="modal fade" id="adidasDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="adidasDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="adidasDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="adidasDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Adidas product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/adidsa.png">
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showAdidasDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Adidas</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            
+            <h5>&#8377;50.24</h5>
+            <div class="product__color__select">
+                <label for="pc-4">
+                    <input type="radio" id="pc-4">
+                </label>
+                <label class="active black" for="pc-5">
+                    <input type="radio" id="pc-5">
+                </label>
+                <label class="grey" for="pc-6">
+                    <input type="radio" id="pc-6">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showAdidasDescription() {
+        // Replace the content of the modal with the respective product description
+        var adidasDescription = getAdidasDescription();
+        document.getElementById("adidasDescriptionContent").innerHTML = adidasDescription;
+        // Show the modal popup
+        $('#adidasDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve Adidas product description
+    function getAdidasDescription() {
+        return "These Adidas shoes feature a stylish design and comfortable fit, making them perfect for everyday wear. The shoes are made from high-quality materials, ensuring durability and long-lasting performance. Available in various colors, these shoes will complement any outfit. Add them to your collection today!";
+    }
+</script>
+<!-- second product end -->
+<!-- Modal popup HTML structure for Sunglass product description -->
+<div class="modal fade" id="sunglassDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="sunglassDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sunglassDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="sunglassDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sunglass product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/sunglasss.png">
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showSunglassDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Sunglass</h6> <!-- Example Product Name -->
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            
+            <h5>&#8377;99.99</h5> <!-- Example Product Price -->
+            <div class="product__color__select">
+                <label for="pc-25">
+                    <input type="radio" id="pc-25">
+                </label>
+                <label class="active black" for="pc-26">
+                    <input type="radio" id="pc-26">
+                </label>
+                <label class="grey" for="pc-27">
+                    <input type="radio" id="pc-27">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showSunglassDescription() {
+        // Replace the content of the modal with the respective product description
+        var sunglassDescription = getSunglassDescription();
+        document.getElementById("sunglassDescriptionContent").innerHTML = sunglassDescription;
+        // Show the modal popup
+        $('#sunglassDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve Sunglass product description
+    function getSunglassDescription() {
+        return "These stylish black sunglasses offer UV protection and feature a sleek design suitable for both casual and formal occasions. The lightweight frame ensures comfort, while the black lenses provide excellent glare reduction. Add a touch of sophistication to your look with these versatile sunglasses.";
+    }
+</script>
+<!-- third product end -->           
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Modal popup HTML structure for Hoodie product description -->
+<div class="modal fade" id="hoodieDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="hoodieDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hoodieDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="hoodieDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hoodie product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+    <div class="product__item sale">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+            <span class="label">Sale</span>
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showHoodieDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Hoody</h6>
+            <a href="#" class="add-cart" onclick="addToCart('Hoody', 40.48);">+ Add To Cart</a>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <h5>&#8377;40.48</h5>
+            <div class="product__color__select">
+                <label for="pc-10">
+                    <input type="radio" id="pc-10">
+                </label>
+                <label class="active black" for="pc-11">
+                    <input type="radio" id="pc-11">
+                </label>
+                <label class="grey" for="pc-12">
+                    <input type="radio" id="pc-12">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize an empty array to store cart items
+    var cartItems = [];
+
+    // Function to add product to cart
+    function addToCart(productName, price) {
+        // Create a new object representing the product
+        var product = {
+            name: productName,
+            price: price
+            // Add more properties as needed
+        };
+
+        // Add the product to the cart array
+        cartItems.push(product);
+
+        // Display an alert message indicating the product has been added to the cart
+        alert('Product added to cart: ' + productName);
+    }
+
+    function showHoodieDescription() {
+        // Replace the content of the modal with the respective product description
+        var hoodieDescription = getHoodieDescription();
+        document.getElementById("hoodieDescriptionContent").innerHTML = hoodieDescription;
+        // Show the modal popup
+        $('#hoodieDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve Hoodie product description
+    function getHoodieDescription() {
+        return "This stylish hoodie is perfect for casual wear. Made from high-quality materials, it offers both comfort and durability. With a variety of colors available, you're sure to find the perfect hoodie to match your style.";
+    }
+</script>
+
+
+
+<!-- four product end -->
+<!-- Modal popup HTML structure for Alexander McQueen product description -->
+<div class="modal fade" id="mcQueenDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="mcQueenDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mcQueenDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="mcQueenDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Alexander McQueen product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showMcQueenDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Alexander McQueen</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;50.9</h5>
+            <div class="product__color__select">
+                <label for="pc-13">
+                    <input type="radio" id="pc-13">
+                </label>
+                <label class="active black" for="pc-14">
+                    <input type="radio" id="pc-14">
+                </label>
+                <label class="grey" for="pc-15">
+                    <input type="radio" id="pc-15">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMcQueenDescription() {
+        // Replace the content of the modal with the respective product description
+        var mcQueenDescription = getMcQueenDescription();
+        document.getElementById("mcQueenDescriptionContent").innerHTML = mcQueenDescription;
+        // Show the modal popup
+        $('#mcQueenDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve Alexander McQueen product description
+    function getMcQueenDescription() {
+        return "Experience luxury fashion with Alexander McQueen. This exquisite piece is crafted with attention to detail and features stunning design elements. Elevate your wardrobe with this iconic brand.";
+    }
+</script>
+<!-- fifth product end -->
+    <!-- Modal popup HTML structure for Watch product description -->
+<div class="modal fade" id="watchDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="watchDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchDescriptionModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Product description content will be displayed here -->
+                <p id="watchDescriptionContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Watch product -->
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/goldwatch.png">
+            <ul class="product__hover">
+                 <!-- Add click event handler to the search icon -->
+                 <li><a href="#" onclick="showWatchDescription();"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Watch</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;99.99</h5>
+            <div class="product__color__select">
+                <label for="pc-31">
+                    <input type="radio" id="pc-31">
+                </label>
+                <label class="active black" for="pc-32">
+                    <input type="radio" id="pc-32">
+                </label>
+                <label class="grey" for="pc-33">
+                    <input type="radio" id="pc-33">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showWatchDescription() {
+        // Replace the content of the modal with the respective product description
+        var watchDescription = getWatchDescription();
+        document.getElementById("watchDescriptionContent").innerHTML = watchDescription;
+        // Show the modal popup
+        $('#watchDescriptionModal').modal('show');
+    }
+
+    // Example function to retrieve Watch product description
+    function getWatchDescription() {
+        return "Stay stylish and punctual with our elegant watch. Crafted with precision and quality materials, this watch complements any outfit and adds a touch of sophistication to your look.";
+    }
+</script>
+<!-- sixth product end -->
+<!-- Add this modal popup HTML structure with a unique ID -->
+<div class="modal fade" id="hoddyDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="hoddyDescriptionModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+            <ul class="product__hover">
+                <!-- Pass unique ID to the onclick function -->
+                <li><a href="#" onclick="showProductDescription('Hoddy', 'hoddyDescriptionModal')"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Jacket</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;21.37</h5>
+            <div class="product__color__select">
+                <label for="pc-13">
+                    <input type="radio" id="pc-13">
+                </label>
+                <label class="active black" for="pc-14">
+                    <input type="radio" id="pc-14">
+                </label>
+                <label class="grey" for="pc-15">
+                    <input type="radio" id="pc-15">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Modify function to accept unique modal ID
+    function showProductDescription(productName, modalId) {
+        // Replace the content of the modal with the respective product description
+        var productDescription = getProductDescription(productName);
+        document.getElementById(modalId).innerHTML = `
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productDescriptionModalLabel">Product Description</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>${productDescription}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        // Show the modal popup
+        $(`#${modalId}`).modal('show');
+    }
+
+    // Example function to retrieve product description based on product name
+    function getProductDescription(productName) {
+        // Example: Retrieve product description from a database or predefined data
+        if (productName === "Hoddy") {
+            return "Stay warm and stylish with our comfortable Hoddy. Made from high-quality materials, this Hoddy offers both warmth and durability. Its classic design makes it suitable for various occasions, whether you're lounging at home or going for a casual outing. Add this versatile piece to your wardrobe today!";
+        } else {
+            return "Product description not available.";
+        }
+    }
+</script>
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+    <div class="product__item sale">
+        <div class="product__item__pic set-bg" data-setbg="img/product/jordan11.png">
+            <span class="label">Sale</span>
+            <ul class="product__hover">
+                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>jordan10</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <h5>&#8377;85.49</h5>
+            <div class="product__color__select">
+                <label for="pc-16">
+                    <input type="radio" id="pc-16">
+                </label>
+                <label class="active black" for="pc-17">
+                    <input type="radio" id="pc-17">
+                </label>
+                <label class="grey" for="pc-18">
+                    <input type="radio" id="pc-18">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- seven product end -->
+           <!-- Add the modal popup HTML structure -->
+<div class="modal fade" id="goldNecklaceModal" tabindex="-1" role="dialog" aria-labelledby="goldNecklaceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="goldNecklaceModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This elegant gold necklace is a perfect addition to your jewelry collection. Crafted with premium materials, it offers both beauty and durability. Whether you wear it for special occasions or as an everyday accessory, this necklace is sure to enhance your style.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/necklace.jpeg">
+            <ul class="product__hover">
+                <!-- Add onclick event to trigger modal popup -->
+                <li><a href="#" onclick="showProductDescription('goldNecklaceModal')"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Gold Necklace</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;150.00</h5>
+            <div class="product__color__select">
+                <label for="pc-25">
+                    <input type="radio" id="pc-25">
+                </label>
+                <label class="active black" for="pc-26">
+                    <input type="radio" id="pc-26">
+                </label>
+                <label class="grey" for="pc-27">
+                    <input type="radio" id="pc-27">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to show the product description modal
+    function showProductDescription(modalId) {
+        $(`#${modalId}`).modal('show');
+    }
+</script>
+<!-- eigth product end --> 
+           <!-- Add the modal popup HTML structure -->
+<div class="modal fade" id="louisVuittonBagModal" tabindex="-1" role="dialog" aria-labelledby="louisVuittonBagModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="louisVuittonBagModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>The Louis Vuitton bag is a symbol of luxury and elegance. Crafted with premium materials and meticulous attention to detail, this bag is a statement piece that adds sophistication to any outfit. Whether you're attending a formal event or running errands, carry your essentials in style with the Louis Vuitton bag.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+            <ul class="product__hover">
+                <!-- Add onclick event to trigger modal popup -->
+                <li><a href="#" onclick="showProductDescription('louisVuittonBagModal')"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Louis Vuitton Bag</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            <h5>&#8377;30.66</h5>
+            <div class="product__color__select">
+                <label for="pc-19">
+                    <input type="radio" id="pc-19">
+                </label>
+                <label class="active black" for="pc-20">
+                    <input type="radio" id="pc-20">
+                </label>
+                <label class="grey" for="pc-21">
+                    <input type="radio" id="pc-21">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to show the product description modal
+    function showProductDescription(modalId) {
+        $(`#${modalId}`).modal('show');
+    }
+</script>
+<!-- nine product end -->
+ <!-- Add the modal popup HTML structure -->
+<div class="modal fade" id="sneakersModal" tabindex="-1" role="dialog" aria-labelledby="sneakersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sneakersModalLabel">Product Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>The sneakers are designed for style and comfort. With a sleek design and cushioned sole, these sneakers are perfect for everyday wear. Whether you're hitting the gym or running errands, these sneakers will keep you looking and feeling great.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+            <ul class="product__hover">
+                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Sneaker</h6>
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+                <i class="fa fa-star-o" style="color: gold;"></i>
+            </div>
+            
+            <h5>&#8377;20.28</h5>
+            <div class="product__color__select">
+                <label for="pc-22">
+                    <input type="radio" id="pc-22">
+                </label>
+                <label class="active black" for="pc-23">
+                    <input type="radio" id="pc-23">
+                </label>
+                <label class="grey" for="pc-24">
+                    <input type="radio" id="pc-24">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg="img/product/diamondring.jpg">
+            <ul class="product__hover">
+                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6>Diamond ring</h6> 
+            <a href="#" class="add-cart">+ Add To Cart</a>
+            <div class="rating">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+            </div>
+            
+            <h5>&#8377;500.99</h5> <!-- Example Product Price -->
+            <div class="product__color__select">
+                <label for="pc-25">
+                    <input type="radio" id="pc-25">
+                </label>
+                <label class="active black" for="pc-26">
+                    <input type="radio" id="pc-26">
+                </label>
+                <label class="grey" for="pc-27">
+                    <input type="radio" id="pc-27">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Best immersive Fashion E-commerce fashion Platform to Elevate Sales and Brand</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Fashion Store</a></li>
+                            <li><a href="#">Foot wear</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivary</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
